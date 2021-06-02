@@ -21,7 +21,7 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## ===============================================================
+## ==================================================
 ## https://router.vuejs.org/zh/
 ## -------------------------一.项目生成----------------------------
 ##  下载nodejs安装
@@ -38,7 +38,7 @@ vue list
 ##  新建项目
 vue init webpack 项目名
 ##  选项依次 y-n-n-n
-Install vue-router ==> 是否要安装 vue-router，项目中肯定要使用到 所以Y 回车；
+Install vue-router ==> 是否要安装 vue-router，项目中肯定要使用到 所以Y 回车；/n
 Use ESLint to lint your code ==> 是否需要 js 语法检测 目前我们不需要 所以 n 回车；
 Set up unit tests ==> 是否安装 单元测试工具 目前我们不需要 所以 n 回车；
 Setup e2e tests with Nightwatch ==> 是否需要 端到端测试工具 目前我们不需要 所以 n 回车；
@@ -71,5 +71,5 @@ cnpm run dev
 ## package.json:npm包配置文件，定义了项目的npm脚本，依赖包等信息
 ## README.md:项目的说明文档，markdown 格式
 ## .xxxx文件:这些是一些配置文件，包括语法配置，git配置等
-## ===============================================================
+## ==================================================
 
