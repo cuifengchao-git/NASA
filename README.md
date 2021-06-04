@@ -38,19 +38,19 @@ vue list
 ##  新建项目
 vue init webpack 项目名
 ##  选项依次 y-n-n-n
-Install vue-router ==> 是否要安装 vue-router，项目中肯定要使用到 所以Y 回车；/n
-Use ESLint to lint your code ==> 是否需要 js 语法检测 目前我们不需要 所以 n 回车；
-Set up unit tests ==> 是否安装 单元测试工具 目前我们不需要 所以 n 回车；
-Setup e2e tests with Nightwatch ==> 是否需要 端到端测试工具 目前我们不需要 所以 n 回车；
+Install vue-router ==> 是否要安装 vue-router，项目中肯定要使用到 所以Y 回车；  
+Use ESLint to lint your code ==> 是否需要 js 语法检测 目前我们不需要 所以 n 回车；  
+Set up unit tests ==> 是否安装 单元测试工具 目前我们不需要 所以 n 回车；  
+Setup e2e tests with Nightwatch ==> 是否需要 端到端测试工具 目前我们不需要 所以 n 回车；  
 ##  安装依赖包
 cnpm install
 ##  运行项目
 cnpm run dev
 ## -------------------------二.目录结构----------------------------
 ## build:构建脚本目录
-> 1）build.js             ==>  生产环境构建脚本；
-> 2）check-versions.js    ==>  检查npm，node.js版本；
-> 3）utils.js             ==>  构建相关工具方法；
+> 1）build.js             ==>  生产环境构建脚本；  
+> 2）check-versions.js    ==>  检查npm，node.js版本；  
+> 3）utils.js             ==>  构建相关工具方法；  
 ##  4）vue-loader.conf.js   ==>  配置了css加载器以及编译css之后自动添加前缀；
 ##  5）webpack.base.conf.js ==>  webpack基本配置；
 ##  6）webpack.dev.conf.js  ==>  webpack开发环境配置；
