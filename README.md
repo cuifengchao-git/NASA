@@ -48,8 +48,8 @@ cnpm install
 cnpm run dev
 ## -------------------------二.目录结构----------------------------
 ## build:构建脚本目录
-##  1）build.js             ==>  生产环境构建脚本；
-##  2）check-versions.js    ==>  检查npm，node.js版本；
+# 1）build.js             ==>  生产环境构建脚本；
+# 2）check-versions.js    ==>  检查npm，node.js版本；
 ##  3）utils.js             ==>  构建相关工具方法；
 ##  4）vue-loader.conf.js   ==>  配置了css加载器以及编译css之后自动添加前缀；
 ##  5）webpack.base.conf.js ==>  webpack基本配置；
