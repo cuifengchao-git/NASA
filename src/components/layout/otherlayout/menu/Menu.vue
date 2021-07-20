@@ -1,7 +1,7 @@
 <template>
   <div class="menu-main">
     <el-menu
-      background-color="black"
+      background-color="#1e1b33"
       text-color="#fff"
       active-text-color="#ffd04b">
         <el-submenu index="1">
@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 .menu-main{
-    background-color: black;
+    background-color: #1e1b33;
     width: 100%;
     height: 100%;
 }
