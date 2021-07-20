@@ -1,11 +1,11 @@
 <template>
-  <div class="">
+  <div class="footer-main">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainPage',
+  name: 'Footer',
   data () {
     return {
       
@@ -15,4 +15,9 @@ export default {
 </script>
 
 <style scoped>
+.footer-main{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
 </style>
