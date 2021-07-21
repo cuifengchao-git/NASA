@@ -21,7 +21,7 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## ===============================================================
+## =================================================
 ## https://router.vuejs.org/zh/
 ## -------------------------一.项目生成----------------------------
 ##  下载nodejs安装
@@ -71,7 +71,7 @@ cnpm run dev
 ## package.json:npm包配置文件，定义了项目的npm脚本，依赖包等信息
 ## README.md:项目的说明文档，markdown 格式
 ## .xxxx文件:这些是一些配置文件，包括语法配置，git配置等
-## ===============================================================
+## =================================================
 ## -------------------------三.集成element-ui----------------------------
 ## 安装Element依赖
 ##  1）cnpm i element-ui -S
@@ -83,5 +83,14 @@ cnpm run dev
 ##  cnpm install --save element-ui
 ##  Element官网 https://element.eleme.cn
 ## 运行项目测试即可
-## ===============================================================
+## =================================================
 ## -------------------------四.开发登录页----------------------------
+## =================================================
+## -------------------------五.集成echarts----------------------------
+## 安装vue-echarts
+##  1）cnpm install echarts vue-echarts
+## main.js 引入echarts
+##  1）import ECharts from 'vue-echarts'
+##  2）Vue.component('v-chart', ECharts);
+## 安装composition-api
+##  3）npm install --save @vue/composition-api

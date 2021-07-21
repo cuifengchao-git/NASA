@@ -9,12 +9,15 @@ import MainLayout from '@/components/layout/mainlayout/MainLayout.vue'
 import Menu from '@/components/layout/otherlayout/menu/Menu.vue'
 import Header from '@/components/layout/otherlayout/header/Header.vue'
 import Footer from '@/components/layout/otherlayout/footer/Footer.vue'
+// import ECharts from 'vue-echarts'
+// import * as echarts from 'echarts'
 Vue.use(ElementUI)
 
 Vue.component("main-layout", MainLayout);
 Vue.component("main-menu", Menu);
 Vue.component("main-header", Header);
 Vue.component("main-footer", Footer);
+// Vue.component('v-chart', ECharts);
 
 Vue.config.productionTip = false
 
