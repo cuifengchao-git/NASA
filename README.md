@@ -88,7 +88,8 @@ cnpm run dev
 ## =================================================
 ## -------------------------五.集成echarts----------------------------
 ## 安装vue-echarts
-##  1）cnpm install echarts vue-echarts
+##  1）npm install echarts@4.9.0
+##  2）cnpm fund
 ## main.js 引入echarts
 ##  1）import ECharts from 'vue-echarts'
 ##  2）Vue.component('v-chart', ECharts);
