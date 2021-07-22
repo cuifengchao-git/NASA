@@ -14,14 +14,14 @@ export default new Router({
       component: LogIn
     },
     {
-      path: '/other-kana',
-      name: 'Kana',
-      component: Kana
-    },
-    {
       path: '/home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/other-kana',
+      name: 'Kana',
+      component: Kana
     }
   ]
 })

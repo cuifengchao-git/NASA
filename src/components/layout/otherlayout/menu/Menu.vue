@@ -32,6 +32,9 @@ export default {
     return {
       
     }
+  },
+  created(){
+    console.log("Menu:",this.$route.path);
   }
 }
 </script>

@@ -47,7 +47,7 @@ export default {
     loginSubmit(){
       console.log("================loginSubmit登录==================");
       this.$router.push({
-        path: '/other-kana'
+        path: '/home'
       })
     }
   },

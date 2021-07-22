@@ -91,7 +91,6 @@ cnpm run dev
 ##  1）npm install echarts@4.9.0
 ##  2）cnpm fund
 ## main.js 引入echarts
-##  1）import ECharts from 'vue-echarts'
-##  2）Vue.component('v-chart', ECharts);
+##  1）import '../node_modules/echarts/map/js/world.js'
 ## 安装composition-api
 ##  3）npm install --save @vue/composition-api
