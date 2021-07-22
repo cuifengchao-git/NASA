@@ -51,15 +51,15 @@ export default {
               min: 0,
               max: 100,
               text:['High','Low'],
-              realtime: false,
-              calculable: true,
+              realtime: false,// 拖拽时，是否实时更新
+              calculable: true,// 是否显示拖拽用的手柄
               color: ['orangered','yellow','lightskyblue']
             },
             series: [{
               name: 'World Heritage (2021)',
               type: 'map',
               mapType: 'world',
-              roam: true,
+              roam: true,// 是否开启鼠标缩放和平移漫游 默认不开启 如果只想要开启缩放或者平移，可以设置成 'scale' 或者 'move' 设置成 true 为都开启
               itemStyle:{
                 emphasis:{label:{show:true}}
               },
