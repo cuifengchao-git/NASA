@@ -29,6 +29,7 @@ export default {
     loadMap(){
       let myChart = echarts.init(document.getElementById('homeBodyId')); 
       var option = {
+            backgroundColor: "#02AFDB",
             title: {
               show:"true",//是否显示标题，默认显示，可以不设置
               text:"世界遗迹分布图",//图表标题文本内容
@@ -48,15 +49,30 @@ export default {
                       ' : ' + 
                       value;
               }  
-            },    
-            visualMap: {
-              min: 0,
-              max: 100,
-              text:['High','Low'],
-              realtime: false,// 拖拽时，是否实时更新
-              calculable: true,// 是否显示拖拽用的手柄
-              color: ['orangered','yellow','#88e22e']
-            },
+            }, 
+            dataRange: {
+              x: 'left',
+              y: 'bottom',
+              splitList: [
+                {start: 11},
+                {start: 9, end: 10},
+                {start: 4, end: 8},
+                {start: 3, end: 3},
+                {start: 2, end: 2},
+                {start: 1, end: 1},
+                //{start: 1, color: 'black'},
+                {end: 0, end: 1, color: '#fff'}
+              ],
+              color: ['orangered','yellow','#bed742']
+           },   
+            // visualMap: {
+            //   min: 0,
+            //   max: 10,
+            //   text:['High','Low'],
+            //   realtime: false,// 拖拽时，是否实时更新
+            //   calculable: true,// 是否显示拖拽用的手柄
+            //   color: ['orangered','yellow','#a3cf62']
+            // },
             series: [{
               name: 'World Heritage (2021)',
               type: 'map',
@@ -81,7 +97,7 @@ export default {
 }
 
 .home-main .home-body{
-    background-color: #80d6ff;
+    /* background-color: #80d6ff; */
     width: 100%;
     height: 100%;
 }
