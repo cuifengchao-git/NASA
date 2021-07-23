@@ -54,16 +54,14 @@ export default {
               x: 'left',
               y: 'bottom',
               splitList: [
-                {start: 11},
-                {start: 9, end: 10},
-                {start: 4, end: 8},
-                {start: 3, end: 3},
-                {start: 2, end: 2},
-                {start: 1, end: 1},
-                //{start: 1, color: 'black'},
+                {start: 11, color: '#87481f'},
+                {start: 9, end: 10, color: '#b76f40'},
+                {start: 4, end: 8, color: '#b69968'},
+                {start: 3, end: 3, color: '#b7ba6b'},
+                {start: 2, end: 2, color: '#40835e'},
+                {start: 1, end: 1, color: '#bed742'},
                 {end: 0, end: 1, color: '#fff'}
-              ],
-              color: ['orangered','yellow','#bed742']
+              ]
            },   
             // visualMap: {
             //   min: 0,
