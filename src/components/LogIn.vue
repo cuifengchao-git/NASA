@@ -7,6 +7,7 @@
       <span class="border col2"></span>
       <el-form ref="form" :model="form">
         <div class="login-title">登录</div>
+        <div class="login-title font-red">{{message}}</div>
         <div class="login-input-size">
           <div>
             <el-input
@@ -33,6 +34,7 @@
 </template>
 
 <script>
+import { getLoginUserInfo } from '@/service/loginService.js'
 export default {
   name: 'LogIn',
   data () {
@@ -40,15 +42,36 @@ export default {
       form: {
         username: "",
         userpwd: ""
-      }
+      },
+      message: ""
     }
   },
   methods: {
     loginSubmit(){
       console.log("================loginSubmit登录==================");
-      this.$router.push({
-        path: '/home'
+      
+      //请求参数
+      let paramValue = {};
+      paramValue.username = this.form.username
+      paramValue.userpwd = this.form.userpwd
+
+      //请求后端API
+      getLoginUserInfo(paramValue).then(res => {
+        console.log("getLoginUserInfo-response:" + JSON.stringify(res));
+
+        this.message = "";
+
+        let resData = res.data
+        if(resData.success){
+          this.$router.push({
+            path: '/home'
+          })
+        }else{
+          this.message = resData.code + ":" + resData.message
+        }
+
       })
+      
     }
   },
   created(){
@@ -110,6 +133,10 @@ export default {
   color: aliceblue;
   text-align: center;
   margin-top: 20px;
+}
+
+.login-main .login-box .font-red {
+  color: rgb(196, 5, 5);
 }
 
 .login-main .login-box .login-input-size {

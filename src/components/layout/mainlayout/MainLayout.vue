@@ -31,8 +31,8 @@ export default {
 <style scoped>
 .main-layout .layout-header{
   /* border: 1px solid #405e8fbd; */
-  width: 99.8%;
-  height: 5em;
+  width: 100%;
+  height: 80px;
 }
 .main-layout .layout-body{
   display: flex;
@@ -40,16 +40,16 @@ export default {
 .main-layout .layout-body .layout-body-left{
   /* border: 1px solid #405e8fbd; */
   width: 15%;
-  height: 40em;
+  height: 616px;
 }
 .main-layout .layout-body .layout-body-main{
   /* border: 1px solid #405e8fbd; */
-  width: 84.8%;
-  height: 40em;
+  width: 84.97%;
+  height: 616px;
 }
 .main-layout .layout-footer{
   /* border: 1px solid #405e8fbd; */
-  width: 99.8%;
-  height: 1.6em;
+  width: 100%;
+  height: 25px;
 }
 </style>

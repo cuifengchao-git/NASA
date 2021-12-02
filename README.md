@@ -94,3 +94,61 @@ cnpm run dev
 ##  1）import '../node_modules/echarts/map/js/world.js'
 ## 安装composition-api
 ##  3）npm install --save @vue/composition-api
+## =================================================
+## -------------------------六.vue整合axios----------------------------
+## ajax和axios、fetch
+##  1）ajax：是Jquery Ajax
+##  2）fetch：是存js的
+##     https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
+##  3）axios：基于promise的HTTP库
+##     https://www.kancloud.cn/yunye/axios/234845
+## axios是什么
+##  1）是一个基于promise的http库，可以用在浏览器和node中
+## axios的作用
+##  1）axios主要是用于向后台发起请求的
+## 安装axios
+##  1）npm install axios
+## vue整合axios
+##  1）编写封装axios实例文件new-axios.js
+##  2）main.js引入编写好的new-axios.js
+##     import axios from '@/axios/new-axios.js'
+##     Vue.prototype.axios = axios
+##  3）在画面正常调取方法即可
+##     this.axios.axiosSpring.get('/api/test').then(res=>{
+##          console.log("11111111:" + res);
+##     })
+## =================================================
+## -------------------------六.vue联通后端(前后不分离)-----------------------
+##  1）封装localStorage使用storage.js
+##     对localStorage做存储，获取，删除操作
+##  2）在main中全局注册下
+##     import {setStore, getStore, removeStore} from '@/storage/storage.js'
+##     Vue.prototype.setStore = setStore
+##     Vue.prototype.getStore = getStore
+##     Vue.prototype.removeStore = removeStore
+##  3）封装axios
+##     定义getRequest等调用的方法
+##  4）封装service类
+##     按照模块编写请求后端的servie方法
+##  5）前端正式调用
+## =================================================
+## -------------------------其他-----------------------
+##  1）Cookie
+##     cookie指的时浏览器里能永久存储的一种数据，是浏览器的一种数据存储功能
+##     cookie由服务器生成，发给浏览器，浏览器把cookie以K-V形式保存在某目录文本文件中。
+##     下一次请求同一网址时会把该cookie发给服务器。浏览器存在一些限制确保cookie不会被恶意使用
+##     所以不会占用太多磁盘空间，所以每个域的cookie数量是有限的
+##     会话cookie，将cookei存储在浏览器中，生命周期与浏览器一致，浏览器关闭，cookie消失
+##     持久cookie，将cookei存储在营盘中，生命周期时我们设置cookei时，设置时间
+##  2）Session
+##     session是会话。服务器要知道发送请求给自己的是谁。为了区分，服务器就需要给客户端分配不同的标识。
+##     然后客户端给服务器请求时，就要带上这个身份标识，服务器就知道这个请求来自于谁。
+##     客户端如何保存这个标识，可以有多种方式。
+##     
+##     2.1）不使用session做验证的原因
+##          每次认证用户发起请求时，服务器需要去创建一个记录来存储信息。当越来越多的用户发请求时，内存的开销也会不断增加。
+##          由于sessions 存放在服务器内存中，伴随而来的是可扩展性问题。当我们想要增加服务器来解决负载问题时，session 里的关键性信息会限制我们的扩展
+##          当我们扩展应用程序，让数据能够从不同设备上访问时，跨域资源的共享会是一个让人头疼的问题
+##  3）Cookie与Session区别
+##     session保存在服务端；cookie保存在客户端；session安全性比cookie高
+
