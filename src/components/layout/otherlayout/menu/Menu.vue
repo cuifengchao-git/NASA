@@ -19,6 +19,7 @@
         <el-menu-item-group>
           <template slot="title">日语</template>
           <el-menu-item index="/other-kana">五十音图</el-menu-item>
+          <el-menu-item index="/other-word">词汇</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
