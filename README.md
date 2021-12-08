@@ -151,5 +151,6 @@ cnpm run dev
 ##          当我们扩展应用程序，让数据能够从不同设备上访问时，跨域资源的共享会是一个让人头疼的问题
 ##  3）Cookie与Session区别
 ##     session保存在服务端；cookie保存在客户端；session安全性比cookie高
-## token: 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
+## 旧token: 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
+## 新token: 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
 
